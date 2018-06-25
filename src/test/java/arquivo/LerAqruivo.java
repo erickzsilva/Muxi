@@ -6,8 +6,8 @@ import java.io.IOException;
 
 public class LerAqruivo {
 	
-	String linha1;
-	String linha2;
+	String login;
+	String senha;
 
 
 	public LerAqruivo() {
@@ -15,23 +15,23 @@ public class LerAqruivo {
 	}
 	
 
-	public String getLinha1() {
-		return linha1;
+	public String getlogin() {
+		return login;
 	}
 
 
-	public void setLinha1(String linha1) {
-		this.linha1 = linha1;
+	public void setlogin(String login) {
+		this.login = login;
 	}
 
 
-	public String getLinha2() {
-		return linha2;
+	public String getsenha() {
+		return senha;
 	}
 
 
-	public void setLinha2(String linha2) {
-		this.linha2 = linha2;
+	public void setsenha(String senha) {
+		this.senha = senha;
 	}
 
 
@@ -39,11 +39,11 @@ public class LerAqruivo {
 		try{
 	         BufferedReader arquivo = new BufferedReader(new FileReader("c:/arquivo.txt"));
 	        
-	        	String linha1 = arquivo.readLine();
-	            this.linha1 = linha1;
+	        	String login = arquivo.readLine();
+	            this.login = login;
 	            
-	            String linha2 = arquivo.readLine();
-	            this.linha2 = linha2;
+	            String senha = arquivo.readLine();
+	            this.senha = senha;
 	            
 	         
 	         arquivo.close();
@@ -56,7 +56,7 @@ public class LerAqruivo {
 	public static void main(String[] args) {
 		LerAqruivo l = new LerAqruivo();
 		l.ler();
-		System.out.println(l.getLinha2());
+		System.out.println(l.getsenha());
 	}	
 
 }

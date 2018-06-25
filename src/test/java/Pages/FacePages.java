@@ -25,10 +25,10 @@ public class FacePages {
 		driver.switchTo().frame(0);	
 		
 		WebElement username = driver.findElement(By.id("signinField"));
-		username.sendKeys(l.getLinha1());
+		username.sendKeys(l.getlogin());
 
 		WebElement senha = driver.findElement(By.id("password"));
-		senha.sendKeys(l.getLinha2());
+		senha.sendKeys(l.getsenha());
 
 		WebElement Btnloga = driver.findElement(By.id("signinButtonSend"));
 		Btnloga.click();
